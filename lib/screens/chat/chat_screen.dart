@@ -9,8 +9,10 @@ import 'package:material_design_icons_flutter/material_design_icons_flutter.dart
 
 class ChatScreenArgs {
   final String chatId;
+  final String title;
+  final ImageProvider image;
 
-  ChatScreenArgs(this.chatId);
+  ChatScreenArgs({this.chatId, @required this.title, this.image});
 }
 
 class ChatScreen extends StatefulWidget {
@@ -31,7 +33,16 @@ class _ChatScreenState extends State<ChatScreen> {
 
     return Scaffold(
       appBar: AppBar(
-        title: Text('Chat privado'),
+        //leadingWidth: 95,
+        leading: Row(
+          children: [
+            BackButton(),
+            /*CircleAvatar(
+              backgroundImage: args.image,
+            ),*/
+          ],
+        ),
+        title: Text(args.title),
       ),
       body: Container(
         //padding: const EdgeInsets.all(16.0),
@@ -81,6 +92,7 @@ class _ChatScreenState extends State<ChatScreen> {
                                 chatId, globals.username, text);
                           }),
                     ),
+                    textCapitalization: TextCapitalization.sentences,
                     keyboardType: TextInputType.multiline,
                     minLines: 1,
                     maxLines: 3,

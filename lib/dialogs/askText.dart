@@ -20,6 +20,8 @@ Future<String> askText({
           content: TextField(
             controller: _textFieldController,
             decoration: InputDecoration(labelText: labelText),
+            textCapitalization: TextCapitalization.words, // ADDED
+            autofocus: true,
           ),
           actions: [
             FlatButton(

@@ -35,8 +35,11 @@ class _HomeState extends State<Home> {
           ),
         ],
       ),
-      body: ChatList(
-        username: globals.username,
+      body: Padding(
+        padding: const EdgeInsets.symmetric(vertical: 4),
+        child: ChatList(
+          username: globals.username,
+        ),
       ),
       floatingActionButton: FloatingActionButton(
         child: Icon(MdiIcons.plus),
