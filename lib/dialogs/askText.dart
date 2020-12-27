@@ -2,6 +2,7 @@ import 'dart:async';
 
 import 'package:flutter/material.dart';
 
+/// Utility copied from an older project.
 Future<String> askText({
   @required BuildContext context,
   String title = '',

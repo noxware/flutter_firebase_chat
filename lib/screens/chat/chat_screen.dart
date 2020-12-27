@@ -7,6 +7,7 @@ import 'package:flutter_firebase_chat/models/chat.dart';
 import 'package:flutter_firebase_chat/models/message.dart';
 import 'package:material_design_icons_flutter/material_design_icons_flutter.dart';
 
+/// Args recived when navigating using named routes.
 class ChatScreenArgs {
   final String chatId;
   final String title;

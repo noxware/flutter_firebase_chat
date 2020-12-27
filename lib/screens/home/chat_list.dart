@@ -4,6 +4,7 @@ import 'package:flutter_firebase_chat/services/db.dart';
 import 'package:flutter_firebase_chat/models/chat.dart';
 import 'chat_tile.dart';
 
+/// The list of chats displayed with the tiles.
 class ChatList extends StatelessWidget {
   final String username;
 

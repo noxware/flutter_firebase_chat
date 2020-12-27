@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_firebase_chat/globals.dart' as globals;
 import 'dart:math' as math;
 
+/// Login Screen
 class Login extends StatefulWidget {
   Login({Key key}) : super(key: key);
 
@@ -13,9 +14,11 @@ class _LoginState extends State<Login> {
   final _formKey = GlobalKey<FormState>();
   final _userController = TextEditingController();
 
+  // Triggered in submit or with the button.
   void _login() {
     if (_formKey.currentState.validate()) {
       globals.username = _userController.text;
+      // Prevents going back
       Navigator.pushReplacementNamed(context, '/home')
           .then((value) => globals.username = null);
     }
@@ -32,6 +35,7 @@ class _LoginState extends State<Login> {
           child: Column(
             mainAxisAlignment: MainAxisAlignment.center,
             children: [
+              // MediaQuery to adjust the logo according to screen size and orientation
               Image.asset(
                 'assets/logo.png',
                 width: math.min(MediaQuery.of(context).size.width / 2,

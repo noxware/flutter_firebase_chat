@@ -1,4 +1,4 @@
-# Introduccion
+# Introducción
 
 No me complicare en explicar mucho. Esta app es solo para una prueba con una empresa.
 
@@ -39,3 +39,9 @@ Manda y recibe mensajes en tiempo real con la persona.
 - Las imagenes fueron sacadas de Pixabay y estan bajo la 'Pixabay License' que permite su uso y distribucion incluso en apps comerciales sin atribucion. El logo es un edit de una imagen de alli.
 
 - Se admiten mensajes vacios aproposito.
+
+- La implementacion del chat en la base de datos usa una lista de participantes. Para obtener los chats del usuario se consulta los chats que tienen al usuario en esa lista. Esto en realidad permitira agregar grupos a futuro. Lo iba a hacer pero ya cumpli con los requerimientos de la app hace bastante.
+
+- Algunos widgets son innecesariamente stateful pero no perdere tiempo en cambiarlos ahora.
+
+- El codigo esta un poquitito documentado en ingles y la estructura de directorios esta medio explicada en 'lib/structure.md'.

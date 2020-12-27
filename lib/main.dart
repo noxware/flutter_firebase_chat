@@ -7,10 +7,12 @@ import 'screens/home/home.dart';
 import 'screens/login/login.dart';
 
 void main() {
+  // Quick fix, I think is not necessary anymore.
   WidgetsFlutterBinding.ensureInitialized();
   runApp(App());
 }
 
+/// Root widget for app initialization purposes.
 class _Init extends StatelessWidget {
   final Future<FirebaseApp> _fbInit = Firebase.initializeApp();
 

@@ -1,3 +1,4 @@
+/// Db abstraction object repreenting a single message.
 class Message {
   final String id;
   //final String chatId;

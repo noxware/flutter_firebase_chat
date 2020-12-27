@@ -6,6 +6,7 @@ import 'package:material_design_icons_flutter/material_design_icons_flutter.dart
 import 'package:flutter_firebase_chat/screens/chat/chat_screen.dart';
 import 'package:flutter_firebase_chat/services/db.dart';
 
+/// The tile with the avatar, title and last message in the chat.
 class ChatTile extends StatelessWidget {
   final String title;
   final String chatId;

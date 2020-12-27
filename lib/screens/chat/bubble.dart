@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_firebase_chat/models/message.dart';
 import 'package:flutter_firebase_chat/globals.dart' as globals;
 
+/// A message bubble used to display a single message.
 class Bubble extends StatelessWidget {
   final Message msg;
   /*final bool right;*/

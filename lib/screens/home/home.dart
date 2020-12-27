@@ -5,6 +5,7 @@ import 'package:flutter_firebase_chat/dialogs/askText.dart';
 import 'package:flutter_firebase_chat/services/db.dart';
 import 'chat_list.dart';
 
+/// Home screen, the list of chats, the main menu.
 class Home extends StatefulWidget {
   Home({Key key}) : super(key: key);
 
