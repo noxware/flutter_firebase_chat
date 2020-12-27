@@ -71,6 +71,7 @@ class Database {
     if (existChat == null) {
       await _chats.add({
         'members': [user1, user2],
+        'time': FieldValue.serverTimestamp(),
       });
     }
   }
